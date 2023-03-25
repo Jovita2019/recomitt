@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Expenses chart component</title>
+  <link rel="stylesheet" href="style.css">
+  
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+
+  <main>
+   <div class="bar-chart">
+     <div class="content">
+       
+       <div class="balance flex">
+         <div class="balance-summary grid">
+           <h1>My balance</h1>
+           <p>$921.48</p>
+         </div>
+         <svg class="radio" width="72" height="48" viewBox="0 0 72 48" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><circle fill="#382314" cx="48" cy="24" r="24"/><circle stroke="#FFF" stroke-width="2" cx="24" cy="24" r="23"/></g ></svg>
+       </div>
+       <div class="spending grid">
+       
+        <div>
+          <canvas id="myChart"></canvas>
+          
+        </div>
+         <hr>
+         <div class="spending-summary flex">
+           <div class="spending-current">
+             <p>Total this month</p>
+             <p><span>$478.33</span></p>
+             
+           </div>
+           <div class="spending-prev">
+             <p><span>+2.4%</span></p>
+             <p>from last month</p>
+             
+           </div>
+         </div>
+       </div>
+
+     </div>
+   </div>
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">JOVITA</a>.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
